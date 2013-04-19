@@ -1,0 +1,16 @@
+# Class files
+*.class
+# Auto generated files from oj.py
+*.in.txt
+*.out.txt
+out.txt
+# IntelliJ
+*.iml
+.idea
+out/*
+# Emacs
+*~
+# Temporary file created because POJ only accepts Main class
+src/Main.java
+# Setting file for oj.py script that contains my user info.
+src/setting.json
