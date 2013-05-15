@@ -20,7 +20,7 @@ import commands
 import os
 import re
 
-class_def_pattern = re.compile(r'class [a-zA-Z]+ {')
+class_def_pattern = re.compile(r'class [a-zA-Z][a-zA-Z0-9]+ {')
 
 def rename_java_class(original_class, new_class):
     original_file = open(original_class + ".java")
