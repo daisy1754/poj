@@ -1,4 +1,6 @@
+import java.awt.*;
 import java.util.*;
+import java.util.List;
 
 /**
  * 2688
@@ -151,25 +153,6 @@ public class CleaningRobot {
         @Override
         public int compareTo(WeightedPoint weightedPoint) {
             return weight - weightedPoint.weight;
-        }
-    }
-
-    static class Point {
-        int x, y;
-
-        Point(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            return ((Point) o).x == x && ((Point) o).y == y;
-        }
-
-        @Override
-        public int hashCode() {
-            return x * 1000 + y;
         }
     }
 }
