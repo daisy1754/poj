@@ -66,7 +66,7 @@ def update_submitted_file_info(file_name, problem_no):
     new_line = problem_no + "\t" + file_name + "\n"
     problem_no = int(problem_no)
     for line in lines:
-        if (int(line.split("\t")[0]) > problem_no):
+        if (int(line.split("\t")[0]) > problem_no and not is_recorded):
             submitted_list_file.write(new_line)
             is_recorded = True
         elif (int(line.split("\t")[0]) == problem_no):
