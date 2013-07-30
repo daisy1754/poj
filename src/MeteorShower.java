@@ -4,6 +4,7 @@ import java.util.*;
 /**
  * 3669
  * Time limit exceeded... ;<
+ * See {@link MeteorShower2}
  **/
 public class MeteorShower {
     public static void main(String[] args) {
